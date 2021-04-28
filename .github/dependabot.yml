@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@11ty/eleventy"
+    versions:
+    - 1.0.0-canary.14
+    - 1.0.0-canary.15
+  - dependency-name: markdown-it
+    versions:
+    - 12.0.5
